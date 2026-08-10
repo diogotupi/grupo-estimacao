@@ -942,3 +942,46 @@ body.lightbox-open {
     transition: none !important;
   }
 }
+
+/* Scroll reveal */
+@media (prefers-reduced-motion: no-preference) {
+  .js-scroll .reveal {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition:
+      opacity 0.75s ease,
+      transform 0.75s ease;
+    transition-delay: var(--reveal-delay, 0s);
+    will-change: opacity, transform;
+  }
+
+  .js-scroll .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .js-scroll .marquee.reveal {
+    transform: translateY(1rem);
+  }
+
+  .js-scroll .marquee.reveal.is-visible {
+    transform: translateY(0);
+  }
+
+  .js-scroll .chart-card.reveal {
+    transform: translateY(1.75rem) scale(0.98);
+  }
+
+  .js-scroll .chart-card.reveal.is-visible {
+    transform: translateY(0) scale(1);
+  }
+
+  #expensesBars .expense-fill {
+    width: 0 !important;
+    transition: width 1s ease;
+  }
+
+  #expensesBars.is-inview .expense-fill {
+    width: var(--bar-w) !important;
+  }
+}

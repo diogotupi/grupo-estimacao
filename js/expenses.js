@@ -36,24 +36,14 @@ function renderExpenses() {
           <span>${formatBRL(row.amount)}</span>
         </div>
         <div class="expense-track" aria-hidden="true">
-          <div class="expense-fill" style="width:${pct}%"></div>
+          <div class="expense-fill" style="--bar-w:${pct}%;width:${pct}%"></div>
         </div>
       </div>
     `;
   }).join("");
 
   if (totalEl) totalEl.textContent = formatBRL(total);
-
-  // reflow animation
-  requestAnimationFrame(() => {
-    root.querySelectorAll(".expense-fill").forEach((el) => {
-      const w = el.style.width;
-      el.style.width = "0";
-      requestAnimationFrame(() => {
-        el.style.width = w;
-      });
-    });
-  });
+  root.classList.remove("is-inview");
 }
 
 document.addEventListener("DOMContentLoaded", () => {

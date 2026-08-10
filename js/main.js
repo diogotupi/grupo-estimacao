@@ -117,12 +117,88 @@ function initHeroVideo() {
   video.addEventListener("canplay", tryPlay, { once: true });
 }
 
+function reveal(el, delay = 0) {
+  if (!el) return;
+  el.classList.add("reveal");
+  el.style.setProperty("--reveal-delay", `${delay}s`);
+}
+
+function revealStagger(root, selector, step = 0.08, start = 0) {
+  if (!root) return;
+  [...root.querySelectorAll(selector)].forEach((el, i) => {
+    reveal(el, start + i * step);
+  });
+}
+
+function initScrollReveal() {
+  if (prefersReducedMotion()) return;
+
+  document.body.classList.add("js-scroll");
+
+  // Hero entrance (first viewport)
+  const heroContent = document.querySelector(".hero-content");
+  if (heroContent) {
+    revealStagger(heroContent, ":scope > *", 0.12, 0.05);
+    requestAnimationFrame(() => {
+      heroContent.querySelectorAll(".reveal").forEach((el) => {
+        el.classList.add("is-visible");
+      });
+    });
+  }
+
+  revealStagger(document.querySelector(".about-grid"), ":scope > *", 0.12);
+  reveal(document.querySelector(".supporter-panel"));
+  revealStagger(document.querySelector(".section-charts .container"), ":scope > *", 0.1);
+  revealStagger(document.querySelector(".charts-grid"), ".chart-card", 0.14, 0.05);
+  reveal(document.querySelector(".section-animals .container"));
+  reveal(document.querySelector(".marquee--animals"), 0.08);
+  reveal(document.querySelector(".animals-cta"), 0.12);
+  revealStagger(document.querySelector("#gastos"), ":scope > *", 0.1);
+  revealStagger(document.querySelector(".footer-grid"), ":scope > *", 0.1);
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        io.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  document.querySelectorAll(".reveal").forEach((el) => {
+    if (el.closest(".hero-content")) return;
+    io.observe(el);
+  });
+}
+
+function initExpenseBarReplay() {
+  if (prefersReducedMotion()) return;
+  const bars = document.getElementById("expensesBars");
+  if (!bars) return;
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        bars.classList.add("is-inview");
+        io.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.25 }
+  );
+  io.observe(bars);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
   initHeader();
   initPixButtons();
   initHeroVideo();
+  initScrollReveal();
+  initExpenseBarReplay();
 });
 
 window.EstimacaoMain = { copyPix, PIX_CODE, prefersReducedMotion };
