@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Estimação / SOS Animal</title>
+  <meta name="description" content="Há mais de 20 anos salvando vidas em Teresópolis. Doe via PIX e ajude cães e gatos resgatados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="a11y.skip">Ir para o conteúdo</a>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#topo" class="brand" aria-label="Grupo Estimação / SOS Animal">
+        <img
+          class="brand-logo"
+          src="assets/logo-header.png?v=6"
+          srcset="assets/logo-header.png?v=6 1x, assets/logo-header@2x.png?v=6 2x"
+          alt="Estimação"
+          width="220"
+          height="200"
+        >
+      </a>
+
+      <nav class="nav" id="navMenu" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#quem-somos" data-i18n="nav.about">Quem somos</a></li>
+          <li><a href="#apoiador" data-i18n="nav.supporter">Apoiar</a></li>
+          <li><a href="#animais-numero" data-i18n="nav.numbers">Números</a></li>
+          <li><a href="#cases" data-i18n="nav.animals">Cases</a></li>
+          <li><a href="#gastos" data-i18n="nav.expenses">Gastos</a></li>
+          <li><a href="#doar" data-i18n="nav.donate">Doar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">POR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="hero-media" aria-hidden="true">
+        <video
+          class="hero-video"
+          muted
+          loop
+          playsinline
+          autoplay
+          preload="auto"
+          poster="https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_1600,q_auto,f_jpg/v1786391208/Hero_Dog_BG_lu4hjr.jpg"
+          src="https://res.cloudinary.com/dc48hzb6b/video/upload/q_auto,f_mp4/v1786391208/Hero_Dog_BG_lu4hjr.mp4"
+        >
+          <source src="https://res.cloudinary.com/dc48hzb6b/video/upload/q_auto,f_mp4/v1786391208/Hero_Dog_BG_lu4hjr.mp4" type="video/mp4">
+        </video>
+        <div class="hero-fallback" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-brand">
+          <img class="hero-logo" src="assets/logo.png" srcset="assets/logo.png 1x, assets/logo@2x.png 2x" alt="Grupo Estimação">
+        </p>
+        <h1 class="hero-title" data-i18n="hero.title">HÁ MAIS DE 20 ANOS SALVANDO VIDAS.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Teresópolis, Rio de Janeiro. Cada doação alimenta e cuida de quem foi resgatado.</p>
+        <button type="button" class="btn btn-pix" data-copy-pix data-i18n="pix.copy">COPIAR CÓDIGO PIX</button>
+      </div>
+    </section>
+
+    <section class="section section-about" id="quem-somos">
+      <div class="container about-grid">
+        <div class="about-media">
+          <div class="about-photo">
+            <img
+              src="assets/quem-somos.png"
+              alt="Equipe do Grupo Estimação / SOS Animal com animais resgatados"
+              width="676"
+              height="467"
+              loading="lazy"
+            >
+          </div>
+          <p class="photo-caption" data-i18n="about.photoCaption">Nossa equipe em Teresópolis</p>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about.title">Quem somos</h2>
+          <p data-i18n="about.p1">O Grupo Estimação / SOS Animal foi fundado por Bebete Filpi e fica em Teresópolis, no estado do Rio de Janeiro. Há mais de 20 anos resgatamos animais em situação de risco nas ruas.</p>
+          <p data-i18n="about.p2">Em 2011, na grande enchente de Teresópolis, o grupo foi às ruas desde as primeiras horas. Quase dois mil animais precisaram de ajuda. Muita gente não olhava para os bichos. Nós olhamos.</p>
+          <p data-i18n="about.p3">Depois da tragédia, assumimos o santuário SOS Animal, no Parque dos Três Picos, para continuar cuidando de quem foi resgatado. Seguimos sem ajuda do governo, contando com a solidariedade de pessoas como você.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-supporter" id="apoiador">
+      <div class="container supporter-panel">
+        <h2 class="section-title" data-i18n="supporter.title">Seja um apoiador mensal!</h2>
+        <p class="supporter-text" data-i18n="supporter.p1">Com uma contribuição todo mês, você ajuda a garantir ração, remédios e cuidado para dezenas de animais. É simples, seguro e faz diferença de verdade no abrigo.</p>
+        <p class="supporter-text" data-i18n="supporter.p2">Qualquer valor ajuda. Quanto mais pessoas apoiam todos os meses, menos precisamos recorrer a empréstimos para manter o trabalho.</p>
+        <a
+          class="btn btn-apoia"
+          href="https://apoia.se/grupoestimacao"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="supporter.cta"
+        >Quero apoiar todo mês</a>
+      </div>
+    </section>
+
+    <section class="section section-charts" id="animais-numero">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="charts.title">Acompanhe o número de animais</h2>
+          <p class="estimate-badge" data-i18n="charts.estimate">Estimativa</p>
+        </div>
+        <p class="section-lead charts-note" data-i18n="charts.note">Os números abaixo são estimativas ao longo dos anos. Servem para mostrar o tamanho do nosso cuidado, não um censo oficial.</p>
+        <div class="charts-grid">
+          <figure class="chart-card">
+            <figcaption class="chart-label" data-i18n="charts.dogs">Cães</figcaption>
+            <canvas id="chartDogs" width="640" height="320" aria-label="Gráfico estimado de cães de 2003 a 2026"></canvas>
+            <p class="chart-now"><span data-i18n="charts.now">Estimativa agora (2026):</span> <strong id="dogsNow">—</strong></p>
+          </figure>
+          <figure class="chart-card">
+            <figcaption class="chart-label" data-i18n="charts.cats">Gatos</figcaption>
+            <canvas id="chartCats" width="640" height="320" aria-label="Gráfico estimado de gatos de 2003 a 2026"></canvas>
+            <p class="chart-now"><span data-i18n="charts.now">Estimativa agora (2026):</span> <strong id="catsNow">—</strong></p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-animals" id="cases">
+      <div class="container">
+        <h2 class="section-title" data-i18n="animals.title">Cases de resgate</h2>
+        <p class="section-lead" data-i18n="animals.lead">Toque em uma foto ou vídeo para ver a história.</p>
+      </div>
+      <div class="marquee marquee--animals" aria-label="Cases de resgate">
+        <button type="button" class="marquee-control marquee-control--prev" data-marquee-prev aria-label="Anterior">‹</button>
+        <div class="marquee-track">
+          <div class="marquee-group" id="animalsMarqueeGroup"></div>
+          <div class="marquee-group" aria-hidden="true" id="animalsMarqueeClone"></div>
+        </div>
+        <button type="button" class="marquee-control marquee-control--next" data-marquee-next aria-label="Próximo">›</button>
+      </div>
+      <div class="container animals-cta">
+        <p class="animals-cta-text" data-i18n="animals.cta">
+          Esses são apenas alguns dos mais de 10.000 animais que já passaram por nossos cuidados. Faça parte disso você também! Contribua através do pix, ou torne-se um apoiador no apoia-se!
+        </p>
+        <div class="animals-cta-actions">
+          <button type="button" class="btn btn-pix" data-copy-pix data-i18n="pix.copy">COPIAR CÓDIGO PIX</button>
+          <a
+            class="btn btn-apoia"
+            href="https://apoia.se/grupoestimacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="supporter.cta"
+          >Quero apoiar todo mês</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-expenses" id="gastos">
+      <div class="container" id="doar">
+        <h2 class="section-title" data-i18n="expenses.title">Gastos do mês</h2>
+        <div id="expensesBars" class="expenses-bars" aria-live="polite"></div>
+        <p class="expenses-total"><span data-i18n="expenses.totalLabel">Total estimado</span>: <strong id="expensesTotal">R$ 71.800</strong></p>
+        <p class="expenses-note" data-i18n="expenses.note">Muitas vezes precisamos recorrer a empréstimos. Não temos nenhuma ajuda do governo e as doações quase nunca cobrem todos os custos.</p>
+        <button type="button" class="btn btn-pix btn-pix--block" data-copy-pix data-i18n="pix.copy">COPIAR CÓDIGO PIX</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Grupo Estimação / SOS Animal</p>
+        <p data-i18n="footer.tagline">Teresópolis, RJ. Resgatando e cuidando há mais de 20 anos.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contact">Contato</h3>
+        <p><a class="footer-link" href="https://instagram.com/grupoestimacao" target="_blank" rel="noopener noreferrer">instagram.com/grupoestimacao</a></p>
+        <p><a class="footer-link" href="https://apoia.se/grupoestimacao" target="_blank" rel="noopener noreferrer">apoia.se/grupoestimacao</a></p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.help">Ajude agora</h3>
+        <button type="button" class="btn btn-pix btn-pix--small" data-copy-pix data-i18n="pix.copy">COPIAR CÓDIGO PIX</button>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Grupo Estimação / SOS Animal</p>
+  </footer>
+
+  <div class="pix-bar" role="region" aria-label="Doação PIX">
+    <p class="pix-bar-text" data-i18n="pix.barHint">Ajude com qualquer valor</p>
+    <button type="button" class="btn btn-pix" data-copy-pix data-i18n="pix.copy">COPIAR CÓDIGO PIX</button>
+  </div>
+
+  <div class="toast" id="pixToast" role="status" aria-live="polite" hidden></div>
+
+  <div class="lightbox" id="animalLightbox" hidden aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxName">
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="Fechar">×</button>
+      <button type="button" class="lightbox-nav lightbox-nav--prev" data-lightbox-prev aria-label="Anterior">‹</button>
+      <div class="lightbox-body">
+        <div class="lightbox-media" id="lightboxMedia">
+          <img class="lightbox-img" id="lightboxImg" src="" alt="" hidden>
+          <video class="lightbox-video" id="lightboxVideo" controls playsinline preload="metadata" hidden></video>
+        </div>
+        <div class="lightbox-copy">
+          <h3 id="lightboxName"></h3>
+          <p id="lightboxStory"></p>
+        </div>
+      </div>
+      <button type="button" class="lightbox-nav lightbox-nav--next" data-lightbox-next aria-label="Próximo">›</button>
+      <p class="lightbox-counter" id="lightboxCounter" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/expenses.js"></script>
+  <script src="js/animals.js?v=7"></script>
+</body>
+</html>
