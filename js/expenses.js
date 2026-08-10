@@ -43,7 +43,11 @@ function renderExpenses() {
   }).join("");
 
   if (totalEl) totalEl.textContent = formatBRL(total);
-  root.classList.remove("is-inview");
+  if (root.dataset.seen === "1") {
+    requestAnimationFrame(() => root.classList.add("is-inview"));
+  } else {
+    root.classList.remove("is-inview");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -174,7 +174,14 @@ function initScrollReveal() {
 }
 
 function initExpenseBarReplay() {
-  if (prefersReducedMotion()) return;
+  if (prefersReducedMotion()) {
+    const bars = document.getElementById("expensesBars");
+    if (bars) {
+      bars.dataset.seen = "1";
+      bars.classList.add("is-inview");
+    }
+    return;
+  }
   const bars = document.getElementById("expensesBars");
   if (!bars) return;
 
@@ -182,6 +189,7 @@ function initExpenseBarReplay() {
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
+        bars.dataset.seen = "1";
         bars.classList.add("is-inview");
         io.unobserve(entry.target);
       });
