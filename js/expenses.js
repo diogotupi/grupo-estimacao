@@ -28,7 +28,8 @@ function renderExpenses() {
 
   root.innerHTML = MONTHLY_EXPENSES.map((row) => {
     const label = window.EstimacaoI18n?.t(row.key, lang) || row.key;
-    const pct = Math.max(8, Math.round((row.amount / max) * 100));
+    // Leave visual headroom so the largest category does not imply an unlimited supply.
+    const pct = Math.max(8, Math.round((row.amount / max) * 84));
     return `
       <div class="expense-row">
         <div class="expense-meta">
