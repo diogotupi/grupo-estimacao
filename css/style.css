@@ -281,6 +281,14 @@ a {
   opacity: 0.95;
 }
 
+.hero-actions,
+.pix-bar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -442,6 +450,10 @@ a {
 .btn-apoia:hover,
 .btn-apoia:focus-visible {
   background: #24587d;
+}
+
+.hero-actions .btn-apoia {
+  margin-top: 0;
 }
 
 .animals-cta-actions .btn-pix,
@@ -747,6 +759,17 @@ a {
   font-size: 1.1rem;
 }
 
+.pix-bar-actions {
+  justify-content: center;
+}
+
+.pix-bar .btn {
+  min-height: 3.25rem;
+  margin-top: 0;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+}
+
 .toast {
   position: fixed;
   left: 50%;
@@ -938,6 +961,19 @@ body.lightbox-open {
 
   .pix-bar-text {
     display: none;
+  }
+
+  .pix-bar-actions {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .pix-bar .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.7rem 0.5rem;
+    font-size: clamp(0.76rem, 3.2vw, 1rem);
+    line-height: 1.2;
   }
 }
 

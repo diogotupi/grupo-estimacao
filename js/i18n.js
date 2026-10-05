@@ -22,7 +22,7 @@ const translations = {
       "Com uma contribuição todo mês, você ajuda a garantir ração, remédios e cuidado para dezenas de animais. É simples, seguro e faz diferença de verdade no abrigo.",
     "supporter.p2":
       "Qualquer valor ajuda. Quanto mais pessoas apoiam todos os meses, menos precisamos recorrer a empréstimos para manter o trabalho.",
-    "supporter.cta": "Quero apoiar todo mês",
+    "supporter.cta": "SEJA DOADOR MENSAL",
     "charts.title": "Acompanhe o número de animais",
     "charts.estimate": "Estimativa",
     "charts.note":
@@ -76,7 +76,7 @@ const translations = {
       "With a monthly gift, you help guarantee food, medicine, and care for dozens of animals. It is simple, safe, and truly makes a difference at the shelter.",
     "supporter.p2":
       "Any amount helps. The more people support every month, the less we need loans to keep the work going.",
-    "supporter.cta": "I want to support every month",
+    "supporter.cta": "BECOME A MONTHLY DONOR",
     "charts.title": "Follow the number of animals",
     "charts.estimate": "Estimate",
     "charts.note":
