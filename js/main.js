@@ -15,7 +15,7 @@ function showToast(message) {
   }, 5200);
 }
 
-async function copyPix() {
+async function copyPix(button) {
   const message = window.EstimacaoI18n?.t("pix.toast") ||
     "Prontinho! É só abrir o aplicativo do seu banco e colar o pix com o valor que desejar.";
 
@@ -30,10 +30,12 @@ async function copyPix() {
       input.style.left = "-9999px";
       document.body.appendChild(input);
       input.select();
-      document.execCommand("copy");
+      const copied = document.execCommand("copy");
       document.body.removeChild(input);
+      if (!copied) throw new Error("Clipboard copy failed");
     }
     showToast(message);
+    window.EstimacaoAnalytics?.track("pix_copy", button);
   } catch {
     showToast(PIX_CODE);
   }
@@ -70,7 +72,7 @@ function initHeader() {
 function initPixButtons() {
   document.querySelectorAll("[data-copy-pix]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      void copyPix();
+      void copyPix(btn);
     });
   });
 }
