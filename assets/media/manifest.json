@@ -1,0 +1,117 @@
+{
+  "migratedAt": "2026-10-10T22:23:28.747Z",
+  "files": [
+    {
+      "file": "eros.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389191/Eros_rdiwzj.mp4",
+      "bytes": 29155089,
+      "sha256": "515bad8d68b3e1135af9519038cc9f6614cfe5a42f3765cc5cecc64350deeaec",
+      "contentType": "video/mp4;codecs=avc1"
+    },
+    {
+      "file": "eros-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389191/Eros_rdiwzj.jpg",
+      "bytes": 39092,
+      "sha256": "84dadb6661ef321e0d8b1c4d92a20a0c0fcf359655976fb94476d66739bfd543",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "fisher.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389088/Fisher_jy8pxc.mp4",
+      "bytes": 56753746,
+      "sha256": "92193b0516fc270d258fe20022525f1c07baed3dfa5ba025531ce57f1a154971",
+      "contentType": "video/mp4;codecs=avc1"
+    },
+    {
+      "file": "fisher-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389088/Fisher_jy8pxc.jpg",
+      "bytes": 64027,
+      "sha256": "734bc37d2f8194ef1610622be0cde032bdf65e69899c00024234cff81427fa66",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "claudio.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389083/Claudio_ulwghm.mp4",
+      "bytes": 62187276,
+      "sha256": "f3850a4930098deaa5a1d4488ca94a7736323cc45d21a14ba6976e5f1b7d40da",
+      "contentType": "video/mp4;codecs=hvc1"
+    },
+    {
+      "file": "claudio-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389083/Claudio_ulwghm.jpg",
+      "bytes": 69894,
+      "sha256": "8b57f774685cfbc852d7649fbe6c08363e00b09cd6c9f1b00596a33190bae8be",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "rafa.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/image/upload/v1786389066/Rafa_pvkdky.jpg",
+      "bytes": 129856,
+      "sha256": "a71a7dcb7d4be4ea26068c5334ae6f9ef8d85307448b696d046af3c9a1910049",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "rafa-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/image/upload/w_800,h_900,c_fill,q_auto,f_auto/v1786389066/Rafa_pvkdky.jpg",
+      "bytes": 74359,
+      "sha256": "9140007aa2a3622cd9307557bb07adb07933638740deef85d253787bacb8c1c0",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "oreo.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389068/Oreo_b6zal0.mp4",
+      "bytes": 3702445,
+      "sha256": "60bc908ae13ea252ed262155f584ec625580207bd657ed5f8f9ded7bb444156d",
+      "contentType": "video/mp4;codecs=avc1"
+    },
+    {
+      "file": "oreo-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389068/Oreo_b6zal0.jpg",
+      "bytes": 50253,
+      "sha256": "da714a4c13c10b315b5c06b60a489c4b5ee9098c5f5c2e6b7482519673a58366",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "maus-tratos.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Maus_Tratos_aualud.mp4",
+      "bytes": 11730889,
+      "sha256": "ca8bb447bc98e989fc37b5ced9a8ec674b4a58dfbf81765e3c65644a4e5ca655",
+      "contentType": "video/mp4;codecs=avc1"
+    },
+    {
+      "file": "maus-tratos-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389071/Maus_Tratos_aualud.jpg",
+      "bytes": 63889,
+      "sha256": "0477519a107739653b9a7922573b2c6305a6d12cac5b81f1865bf83584ef414c",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "abandono.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Abandono_fvjeot.mp4",
+      "bytes": 9940423,
+      "sha256": "2894db795cf6c4924717e9bc6dad567a21e9aba62fb760b1e2557481dfbbdcf7",
+      "contentType": "video/mp4;codecs=avc1"
+    },
+    {
+      "file": "abandono-thumb.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/v1786389071/Abandono_fvjeot.jpg",
+      "bytes": 50391,
+      "sha256": "850a99dcf2cf1e3e04694173fd1e5c014c68bac84cb8c70683a8b95b4c4e9ca3",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "hero-dog-poster.jpg",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/so_0,w_1600,q_auto,f_jpg/v1786391208/Hero_Dog_BG_lu4hjr.jpg",
+      "bytes": 291620,
+      "sha256": "25e9f0c66b527c75a16b01201ed8ee60c6579d0adfb65dd2c85ffd3ff92cef77",
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "hero-dog.mp4",
+      "source": "https://res.cloudinary.com/dc48hzb6b/video/upload/q_auto,f_mp4/v1786391208/Hero_Dog_BG_lu4hjr.mp4",
+      "bytes": 22232008,
+      "sha256": "4ea7d0de637c72cdd4fa0528d2ab72a50132de1ffc1fc699265683f15685e788",
+      "contentType": "video/mp4;codecs=avc1"
+    }
+  ]
+}

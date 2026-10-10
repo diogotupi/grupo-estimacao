@@ -1,22 +1,10 @@
-function cloudinaryVideoThumb(mp4Url) {
-  return mp4Url
-    .replace("/video/upload/", "/video/upload/so_0,w_800,h_900,c_fill,q_auto,f_jpg/")
-    .replace(/\.mp4$/i, ".jpg");
-}
-
-function cloudinaryImageThumb(jpgUrl) {
-  return jpgUrl.replace("/image/upload/", "/image/upload/w_800,h_900,c_fill,q_auto,f_auto/");
-}
-
 const ANIMALS = [
   {
     id: "eros",
     name: { pt: "Eros", en: "Eros" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389191/Eros_rdiwzj.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389191/Eros_rdiwzj.mp4"
-    ),
+    src: "assets/media/eros.mp4",
+    thumb: "assets/media/eros-thumb.jpg",
     story: {
       pt: "Eros foi resgatado após maus tratos. Nós demos a ele uma segunda chance, para que ele tivesse uma vida digna junto com seus novos amiguinhos.",
       en: "Eros was rescued after abuse. We gave him a second chance so he could live with dignity alongside his new friends.",
@@ -26,10 +14,8 @@ const ANIMALS = [
     id: "fisher",
     name: { pt: "Fisher", en: "Fisher" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389088/Fisher_jy8pxc.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389088/Fisher_jy8pxc.mp4"
-    ),
+    src: "assets/media/fisher.mp4",
+    thumb: "assets/media/fisher-thumb.jpg",
     story: {
       pt: "Abandonado no lixão do município, Fisher foi resgatado por nós à beira da morte. Extremamente magro, conosco ele teve a chance de viver uma vida digna com seus novos amigos.",
       en: "Abandoned at the city dump, Fisher was rescued by us near death. Extremely thin, with us he got the chance to live with dignity among his new friends.",
@@ -39,10 +25,8 @@ const ANIMALS = [
     id: "claudio",
     name: { pt: "Claudio", en: "Claudio" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389083/Claudio_ulwghm.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389083/Claudio_ulwghm.mp4"
-    ),
+    src: "assets/media/claudio.mp4",
+    thumb: "assets/media/claudio-thumb.jpg",
     story: {
       pt: "Claudio foi resgatado após um atropelamento na Rio-Bahia. Vários ossos quebrados, e foi largado para morrer. Esse antes e depois é incrível! Claudio teve sua segunda chance conosco para viver ao lado de seus novos coleguinhas aqui no nosso abrigo.",
       en: "Claudio was rescued after being hit on the Rio-Bahia highway. Several broken bones, and he was left to die. This before and after is incredible! With us he got a second chance to live with his new friends at our shelter.",
@@ -52,10 +36,8 @@ const ANIMALS = [
     id: "rafa",
     name: { pt: "Rafa", en: "Rafa" },
     type: "image",
-    src: "https://res.cloudinary.com/dc48hzb6b/image/upload/v1786389066/Rafa_pvkdky.jpg",
-    thumb: cloudinaryImageThumb(
-      "https://res.cloudinary.com/dc48hzb6b/image/upload/v1786389066/Rafa_pvkdky.jpg"
-    ),
+    src: "assets/media/rafa.jpg",
+    thumb: "assets/media/rafa-thumb.jpg",
     story: {
       pt: "O Rafa foi um caso extremo! Dá uma olhada nesse antes e depois!",
       en: "Rafa was an extreme case! Take a look at this before and after!",
@@ -65,10 +47,8 @@ const ANIMALS = [
     id: "oreo",
     name: { pt: "Oreo", en: "Oreo" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389068/Oreo_b6zal0.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389068/Oreo_b6zal0.mp4"
-    ),
+    src: "assets/media/oreo.mp4",
+    thumb: "assets/media/oreo-thumb.jpg",
     story: {
       pt: "Esse é o gatinho Oreo! Foi abandonado e resgatado com muitas feridas! Oreo pode ter uma segunda chance ao lado de seus amigos!",
       en: "This is Oreo the kitten! He was abandoned and rescued with many wounds. Oreo got a second chance alongside his friends!",
@@ -78,10 +58,8 @@ const ANIMALS = [
     id: "maus-tratos",
     name: { pt: "Maus tratos", en: "Abuse case" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Maus_Tratos_aualud.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Maus_Tratos_aualud.mp4"
-    ),
+    src: "assets/media/maus-tratos.mp4",
+    thumb: "assets/media/maus-tratos-thumb.jpg",
     story: {
       pt: "Esses dois cachorrinhos estavam sendo maltratados por sua dona. Nós os resgatamos para que pudessem ter uma vida digna.",
       en: "These two puppies were being mistreated by their owner. We rescued them so they could live with dignity.",
@@ -91,10 +69,8 @@ const ANIMALS = [
     id: "abandono",
     name: { pt: "Abandono", en: "Abandonment" },
     type: "video",
-    src: "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Abandono_fvjeot.mp4",
-    thumb: cloudinaryVideoThumb(
-      "https://res.cloudinary.com/dc48hzb6b/video/upload/v1786389071/Abandono_fvjeot.mp4"
-    ),
+    src: "assets/media/abandono.mp4",
+    thumb: "assets/media/abandono-thumb.jpg",
     story: {
       pt: "Abandonado para morrer, veja como ele ficou magrinho. Felizmente pudemos dar a ele uma vida digna no abrigo.",
       en: "Left to die, see how thin he was. Thankfully we could give him a dignified life at the shelter.",
@@ -362,7 +338,7 @@ function initAnimalsMarquee() {
     ro.observe(group);
   }
 
-  // Start immediately — don't wait for Cloudinary thumbs
+  // Start immediately — don't wait for thumbnails
   boot();
 
   void (async () => {
